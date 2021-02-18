@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activities</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- JQuery CDN , Stylesheet and Font Awesome -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+    <body id="activities">
+        <div id="container">
+            <header class="sticky-top">
+                <div class="container main-header">
+                    <nav class="navbar navbar-expand-lg navbar-light  main-menu ml-n3">
+                        <div class="navbar-brand logo mt-n3 ml-n3">
+                            <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+                        </div>
+                        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" 
+                            data-target = "#navbarContent" 
+                            aria-controls = "navbarContent" aria-expanded = "false" 
+                            aria-label = "Toggle navigation">
+                            <span class = "navbar-toggler-icon"></span>
+                        </button>
+        
+                        <div class="collapse navbar-collapse " id="navbarContent">
+                            <ul class="navbar-nav ml-auto mt-n2">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="activities.html">Activities</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+            
+
+            <h1>Activities</h1>
+            <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. 
+                These activities are not however run by the state park and recreational department. They are operated and manage 
+                by private vendors but are partners with the state department. Therefore, for schedule inquiries or information,
+                please contact them directly. For a list of activities, please refer to the table below:
+            </p>
+            <table>
+                <tr>
+                    <caption class="text-center">Activities at the Cliffs</caption>
+                    <thead class="text-center">
+                        <th>Activity</th>
+                        <th>West Cliff</th>
+                        <th>North Cliff</th>
+                        <th>East Cliff</th>
+                        <th>South Cliff</th>
+                    <thead>
+                </tr>
+                <tbody>
+                    <tr>
+                        <th>Hiking</th>
+                        <td>College Hikes</td>
+                        <td>Family Fun</td>
+                        <td>Treasure Trails</td>
+                        <td>Canyon Explorer</td>
+                    <tr>
+                    <tr>
+                        <th>Kayak</th>
+                        <td>Western Kayak Meetup</td>
+                        <td>Not Available</td>
+                        <td>Youth Kayaking</td>
+                        <td>Kayak Down</td>
+                    </tr>
+                    <tr>
+                        <th>Skydiving</th>
+                        <td>Seacliff Diving</td>
+                        <td>Sky is the limit</td>
+                        <td>Not Available</td>
+                        <td>Sky Diving for Beginners</td>
+                    </tr>
+                    <tr>
+                        <th>Biking</th>
+                        <td>Bicycle for One</td>
+                        <td>Not Available</td>
+                        <td>Bike Meetup Group</td>
+                        <td>Not Available</td>
+                    </tr>
+                    <tr>
+                        <th>Camping</th>
+                        <td>Youth Camp</td>
+                        <td>Rent a Tent</td>
+                        <td>Campground Adventure</td>
+                        <td>Sunset Camping</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="displaySelected">
+                <div id="result">
+                    <h4>My selected activities to enquire: </h4>
+                </div>
+                <div id="sendinfo">
+                    <input type="email" placeholder="johndoe@gmail.com">
+                    <button>Get Info</button>
+                </div>
+            </div>
+        </main>
+            <section>
+                <ul id="partners">
+                <!-- Use javascript to display partners -->
+                </ul>
+            </section>
+
+
+            <footer>
+                <div id="nondisclaimer">
+                    <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com </div>
+                    <div class="social">
+                        <a href="www.facebook.com" class="fa fa-facebook"></a>
+                        <a href="www.instagram.com" class="fa fa-instagram"></a>
+                        <a href="www.twitter.com" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+
+                <div id="disclaimer">
+                    <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+                    <br><br><br>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- Partners -->
+        <script src="js/site_scripts.js" type="text/Javascript"></script>
+        <script src="js/activity.js" type="text/Javascript"></script>
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

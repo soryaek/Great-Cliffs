@@ -1,0 +1,431 @@
+
+header {
+    width:100%;
+    min-height: 400px;
+    padding-top: 3em; /*3 times the size of current font; it also increases if font increases*/ 
+}
+#home header{
+    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: cover; 
+
+}
+#cliffs header {
+    background: no-repeat lightgrey url(images/forest_cliff.jpg);
+    background-size: cover; 
+}
+
+#activities header{
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: cover; ;
+}
+
+
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: cover; 
+}
+
+
+.main-header {
+    background-color: rgb(255, 255,255, 0.8); /*0.8 means 80% opacity*/ 
+    width: 700px; 
+    margin: 2em auto 0 auto; /*2em left top-bottom right*/
+    min-height: 100px;
+    height: 100px; 
+}
+.main-header .logo img {
+    width: 100px;
+    height: 100px; 
+    margin: 0 2em 0 0; /*clockwise: top right bottom left*/ 
+    float: left; 
+}
+
+#timeofday {
+    text-align: center; 
+    padding: 1em; 
+    font:Arial, Helvetica, sans-serif;
+    color: #3a3a3a; 
+    background-image: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+}
+#clock {
+    color: #125688; 
+}
+
+/* Navigation */
+/* .main-menu {
+    margin-left: 227px; 
+    font-weight: 400;
+ 
+}
+.main-menu ul li {
+    list-style-type: none;
+    display: inline-block; 
+    float: left; 
+    padding-left: 25px; 
+    padding-right: 25px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6); 
+    line-height: 80px; 
+    text-transform: uppercase; 
+    font-size: 14px; 
+
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888; 
+}
+.main-menu ul li a:hover {
+    color: #9ed034; 
+}
+.main-menu ul li.active {
+    background: #9ed034;
+    border: none; 
+}
+.main-menu ul li.active a {
+    color: #fff; 
+} */
+
+
+/* BOOTSTRAP NAV MENU */
+.navbar-nav .nav-item{
+    padding: 0 1.5rem;
+    line-height: 60px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6); 
+    text-transform: uppercase; 
+
+}
+
+.navbar-nav .nav-item.active{
+    background: #9ed034;
+}
+
+.navbar-nav .nav-link{
+    padding-top:2rem;
+    padding-left:2rem;
+}
+.navbar-collapse{
+    background-color: rgb(255, 255,255, 0.8);
+    margin-left:2rem;
+
+    margin-top: -5px;
+
+}
+
+
+
+
+/* Main */
+#home main,
+#cliffs main,
+#activities main {
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 5em 0; 
+    margin-right: 100px;
+    margin-left: 100px; 
+}
+main h1 {
+    color: #9ed034; 
+    padding-bottom: 20px; 
+}
+
+/* Partners */
+section {
+    width:100%; 
+    background-color: #4288c3;
+}
+section #partners {
+    width: 1200px;
+    padding: 2em 0 2em 0; /*clockwise: top right bottom left*/
+    margin: 0 auto; /*top-bottom left-right*/ 
+    text-align: center;   
+}
+section #partners .partner {
+    display: inline-block; 
+    margin: 0 0.75em; 
+    padding: 1.3em 1.5em;
+    background-color: #fff; 
+    border-radius: 50%;
+}
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
+}
+/* Footer */
+footer{
+    width: 100%; 
+    height: 155px; 
+    padding-bottom: 1em; 
+    background-color: #ecfab8; 
+}
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em; 
+}
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    margin-right: 9.25em;
+    float: right; 
+
+}
+footer #disclaimer {
+    clear: both; /*start a new line*/
+}
+footer #disclaimer p {
+    font-size: 0.85em;
+    text-align: center; 
+    
+}
+/* social media buttons */
+footer #nondisclaimer .social .fa {
+    padding:10px;
+    font-size: 15px; 
+    width: 35px;
+    text-align:center; 
+    text-decoration: none;
+    margin: 0 4px; 
+    border-radius: 50%;
+    
+}
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+    background:#cd486b; 
+    color: white; 
+}
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+/* CLIFFS */
+* {
+    box-sizing: border-box;
+}
+.image-container {
+    margin-top:4em;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding-right: 1.4em; 
+} 
+
+.column img {
+    width: 100%;
+    margin-top: -1.2em;; 
+}
+figcaption {
+    width: 100%; 
+    text-align: center;
+    background-color:darkred;
+    padding: .5em; 
+    color: white;
+}
+.row {
+    margin-left: 4em; 
+    margin-right:4em;
+    margin-top: 15px;
+}
+  /* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ACTIVITIES*/
+
+caption{
+    caption-side: top;
+}
+
+
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto; 
+    
+} 
+caption {
+    background: #852B1B;
+    height: 40px; 
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em; 
+    padding-bottom: 2em;
+}
+thead {
+    background: #BDE1EF;
+}
+tbody {
+    background: #EEFFE6; 
+    text-align: center; 
+}
+th, td {
+    width: 225px; 
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B; 
+}
+
+thead th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #fff;
+}
+tbody tr th{
+    background: #bde1ff;;
+}
+
+.selected{
+    color: white; 
+    background: lightgreen;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+#activities main #displaySelected{
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+
+#activities main #displaySelected #result, 
+#activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+}
+#activities main #result{
+    min-height: 50px;
+    width: 300px;
+
+}
+#activities main #result h4{
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+#activities main #displaySelected #sendinfo input[type="email"]{
+    width: 200px;
+}
+
+/* CONTACT*/
+#contact main p,
+#contact main h1,
+#contact .contactinfo,
+#contact form { 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-left: 100px; 
+    margin-right: 100px;
+    
+}
+#contact main h1 {
+    margin-top: 3em;
+}
+#contact main p {
+    padding-bottom: 2em;
+
+}
+.contactinfo span:first-child {
+    font-weight: 600;
+}
+main .contactinfo .phone{
+    padding-bottom: 0.5em;
+}
+
+/* form */
+
+/* form {
+    margin: 1em 0 4em 0; 
+
+}
+fieldset {
+    border: 2px solid #9ed034;
+    padding-left: 2.5em;
+}
+legend {
+    color: #4977D1; 
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: -25px;
+
+}
+form label {
+    display: block;
+    padding-top: 1em; 
+    font-weight: 600;
+
+}
+
+.radios label, 
+.selectmenu label {
+    display: inline; 
+}
+
+.radios , .selectmenu {
+    padding-top: 1em;
+}
+
+.selectmenu select {
+    width: 200px;
+    text-align-last:center; 
+
+}
+input{
+    width: 550px;
+    padding: 0.5em 0 0.5em 0;
+}
+
+#contact .radios input[type="radio"] {
+    width: 25px; 
+}
+form textarea {
+    width: 550px;
+    height: 200px;
+    resize: both;
+}
+.randomcode input{
+    width: 170px;
+    margin-left: 250px;
+    margin-right: 15px;
+    float:left;
+    line-height: 1.3rem;
+    
+}
+.randomcode #codes{
+    padding: 10px;
+    background-color: grey;
+    margin-left:450px;
+    margin-right: 200px;
+    width: 100px;
+
+}
+.button input{
+    margin: 0 0 10px 455px; 
+    width:95px;
+    padding: 0.75em;
+    border: none;
+    color: #fff; 
+    font-weight: 600; 
+
+}
+.button input:hover {
+    opacity: .80; 
+} */
+
+/* MEDIA SCREEN */
+@media screen and (max-width: 600px){
+  nav{
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+   
+}
+
