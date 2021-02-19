@@ -40,7 +40,7 @@
             </header>
             <main>
                 <h1>Contacting Us</h1>
-                <p> <span class="badge badge-info">Information:</span>
+                <p> <span class="badge badge-info">Information</span>
                 You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
                 7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about 
                 the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
@@ -57,31 +57,44 @@
                     </div>
                 </div>
 
-                <form action="/contact" method="post" class="border border-success bg-light w-50 mt-5 mb-5">  
+                <form action="/contact" method="post" class="was-validated border border-success bg-light w-50 mt-5 mb-5">  
                     <fieldset >  
                         <legend class="ml-3 text-success">Contact Form</legend>
                         <div class="form-group ml-4 mr-4">
                             <label for="name">Name:</label> 
                             <span class="badge badge-danger">Required</span>
-                            <input type="text" class="form-control w-100" id="name" placeholder="John Doe">  
+                            <input type="text" class="form-control w-100" id="name" placeholder="John Doe" required>  
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
                         </div>
                         <div class="form-group ml-4 mr-4">
                             <label for="email">Email:</label>  
-                            <input type="email" class="form-control w-100" id="email" placeholder="johndoe@gmail.com"> 
+                            <span class="badge badge-danger">Required</span>
+                            <input type="email" class="form-control w-100" id="email" placeholder="johndoe@gmail.com" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
                         </div>
                         <div class="form-group ml-4 mr-4">
                             <label for="phone">Phone:</label>
-                            <input type="text" class="form-control w-100" id="phone" placeholder="xxx-xxx-xxxx"> 
+                            <span class="badge badge-danger">Required</span>
+                            <input type="text" class="form-control w-100" id="phone" placeholder="xxx-xxx-xxxx" required> 
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
                         </div>
                         <div class="form-group ml-4 mr-4">
-                            <label >How should we contact you?</label>  
-                            <input type="radio" id="emailOp" value="email" checked>Email 
-                            <input type="radio" id="phoneOp" value="phone">Phone
+                            <label for="flexRadioDefault">How should we contact you?</label> 
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="emailOp" checked>
+                                <label class="form-check-label text-dark" for="emailOp">Email</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="phoneOp">
+                                <label class="form-check-label text-dark" for="phoneOp">Phone</label>
+                            </div>
                         </div>
-
                         <div class="form-group ml-4 mr-4">
-                            <label>Which Cliff are you inquiring?</label>  
-                            <select class="w-25 pl-2 mr-4">
+                            <label for="sel1">Which Cliff are you inquiring?</label>  
+                            <select class=" w-25 pl-2 mr-4" id="sel1">
                                 <option>West Cliff</option>
                                 <option>North Cliff</option>
                                 <option>East Cliff</option>
@@ -89,8 +102,11 @@
                             </select>
                         </div>               
                         <div class="form-group ml-4 mr-4">
-                            <label>How did you hear about us:</label>  
-                            <textarea class="form-control w-100" ></textarea>
+                            <label for="comment-box">How did you hear about us:</label>  
+                            <span class="badge badge-danger">Required</span>
+                            <textarea class="form-control w-100" id="comment-box" required></textarea>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
                         </div>
                         <div class="form-group row ml-4 mr-4">
                             <div class="col-7">
@@ -105,8 +121,6 @@
                         </div>
                     </fieldset>  
                 </form>
-
-
                 <section>
                     <ul id="partners"> 
                     </ul>
