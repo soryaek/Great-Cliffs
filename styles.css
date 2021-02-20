@@ -103,7 +103,7 @@ header {
     padding-left:2rem;
 }
 .navbar-collapse{
-    background-color: rgb(255, 255,255, 0.8);
+  
     margin-left:2rem;
 
     margin-top: -5px;
@@ -431,9 +431,11 @@ form textarea {
 
 /* MEDIA SCREEN */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
     
-    /* table{margin-left:-1rem;} */
+    .main-menu ul{
+        background-color: rgb(255,255,255,0.8);
+    }
 
 }
 
