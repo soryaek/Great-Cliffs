@@ -1,156 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <!-- Stylesheet and Font Awesome-->
-        <link rel="stylesheet" href="styles.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Stylesheet and Font Awesome-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <body id="contact" onLoad="disableButton(true)">
-        <div id="container">
-            <header class="sticky-top">
-                <div class="container main-header">
-                    <nav class="navbar navbar-expand-lg navbar-light main-menu ml-n3">
-                        <div class="navbar-brand logo mt-n3 ml-n3">
-                            <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-                        </div>
-                        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" 
-                            data-target = "#navbarContent" 
-                            aria-controls = "navbarContent" aria-expanded = "false" 
-                            aria-label = "Toggle navigation">
-                            <span class = "navbar-toggler-icon"></span>
-                        </button>
-        
-                        <div class="collapse navbar-collapse" id="navbarContent">
-                            <ul class="navbar-nav ml-auto mt-n2">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
-                                <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-                                <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            <main>
-                <h1>Contacting Us</h1>
-                <p> <span class="badge badge-info">Information</span>
-                You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
-                7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about 
-                the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
-                </p>
-                    
-                <div class="contactinfo">
-                    <div class="phone">
-                        <span class="badge badge-primary">Phone:</span>
-                        <span>(800) GCLIFFS</span>
-                    </div>
-                    <div class="email">
-                        <span class="badge badge-primary">Email:</span>
-                        <span>info@greatcliffs.com</span>
-                    </div>
-                </div>
+</head>
 
-                <form action="/contact" method="post" class="was-validated border border-success bg-light w-50 mt-5 mb-5">  
-                    <fieldset >  
-                        <legend class="ml-3 text-success">Contact Form</legend>
-                        <div class="form-group ml-4 mr-4">
-                            <label for="name">Name:</label> 
-                            <span class="badge badge-danger">Required</span>
-                            <input type="text" class="form-control w-100" id="name" placeholder="John Doe" required>  
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
-                        </div>
-                        <div class="form-group ml-4 mr-4">
-                            <label for="email">Email:</label>  
-                            <span class="badge badge-danger">Required</span>
-                            <input type="email" class="form-control w-100" id="email" placeholder="johndoe@gmail.com" required>
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
-                        </div>
-                        <div class="form-group ml-4 mr-4">
-                            <label for="phone">Phone:</label>
-                            <span class="badge badge-danger">Required</span>
-                            <input type="text" class="form-control w-100" id="phone" placeholder="xxx-xxx-xxxx" required> 
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
-                        </div>
-                        <div class="form-group ml-4 mr-4">
-                            <label for="flexRadioDefault">How should we contact you?</label> 
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="emailOp" checked>
-                                <label class="form-check-label text-dark" for="emailOp">Email</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="phoneOp">
-                                <label class="form-check-label text-dark" for="phoneOp">Phone</label>
-                            </div>
-                        </div>
-                        <div class="form-group ml-4 mr-4">
-                            <label for="sel1">Which Cliff are you inquiring?</label>  
-                            <select class=" w-25 pl-2 mr-4" id="sel1">
-                                <option>West Cliff</option>
-                                <option>North Cliff</option>
-                                <option>East Cliff</option>
-                                <option>South Cliff</option>
-                            </select>
-                        </div>               
-                        <div class="form-group ml-4 mr-4">
-                            <label for="comment-box">How did you hear about us:</label>  
-                            <span class="badge badge-danger">Required</span>
-                            <textarea class="form-control w-100" id="comment-box" required></textarea>
-                            <div class="valid-feedback">Valid.</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
-                        </div>
-                        <div class="form-group row ml-4 mr-4">
-                            <div class="col-7">
-                                <input class="float-right" type="text" id="codeentered" name="randomcode" placeholder="Enter Characters">
-                            </div>
-                            <div class="col-5">
-                                    <p class="badge badge-dark" id="codes"></p>
-                            </div>
-                        </div>
-                        <div class="form-group float-right mr-3">
-                            <button class="btn btn-primary" id="submit">Inquire</button>
-                        </div>
-                    </fieldset>  
-                </form>
-                <section>
-                    <ul id="partners"> 
-                    </ul>
-                </section>
-            </main>
-                <!-- footer -->
-                <footer>
-                    <div id="nondisclaimer">
-                        <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com </div>
-                        <div class="social">
-                            <a href="www.facebook.com" class="fa fa-facebook"></a>
-                            <a href="www.instagram.com" class="fa fa-instagram"></a>
-                            <a href="www.twitter.com" class="fa fa-twitter"></a>
-                        </div>
+<body id="contact" onLoad="disableButton(true)">
+    <div id="container">
+        <header class="sticky-top">
+            <div class="container main-header">
+                <nav class="navbar navbar-expand-lg navbar-light main-menu ml-n3">
+                    <div class="navbar-brand logo mt-n3 ml-n3">
+                        <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
                     </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <div id="disclaimer">
-                        <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
-                        <br><br><br>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ml-auto mt-n2">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                </footer>
+                </nav>
             </div>
-        <!-- Partners -->
-        <script src="js/site_scripts.js" type="text/Javascript"></script>
-        <!-- Random Code -->
-        <script src="js/randomcodes.js" type="text/Javascript"></script>
+        </header>
+        <main>
+            <h1>Contacting Us</h1>
+            <p> <span class="badge badge-info">Information</span>
+                You can drop by the visitors information center at the cliff site that you plan on visiting. They are
+                open
+                7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information
+                about
+                the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
+            </p>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+            <div class="contactinfo">
+                <div class="phone">
+                    <span class="badge badge-primary">Phone:</span>
+                    <span>(800) GCLIFFS</span>
+                </div>
+                <div class="email">
+                    <span class="badge badge-primary">Email:</span>
+                    <span>info@greatcliffs.com</span>
+                </div>
+            </div>
+
+            <form action="/contact" method="post" class="was-validated border border-success bg-light mt-5 mb-5">
+                <fieldset>
+                    <legend class="ml-3 text-success">Contact Form</legend>
+                    <div class="form-group ml-4 mr-4">
+                        <label for="name">Name:</label>
+                        <span class="badge badge-danger">Required</span>
+                        <input type="text" class="form-control w-100" id="name" placeholder="John Doe" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group ml-4 mr-4">
+                        <label for="email">Email:</label>
+                        <span class="badge badge-danger">Required</span>
+                        <input type="email" class="form-control w-100" id="email" placeholder="johndoe@gmail.com"
+                            required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group ml-4 mr-4">
+                        <label for="phone">Phone:</label>
+                        <span class="badge badge-danger">Required</span>
+                        <input type="text" class="form-control w-100" id="phone" placeholder="xxx-xxx-xxxx" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group ml-4 mr-4">
+                        <label for="flexRadioDefault">How should we contact you?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="emailOp" checked>
+                            <label class="form-check-label text-dark" for="emailOp">Email</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="phoneOp">
+                            <label class="form-check-label text-dark" for="phoneOp">Phone</label>
+                        </div>
+                    </div>
+                    <div class="form-group ml-4 mr-4">
+                        <label for="sel1">Which Cliff are you inquiring?</label>
+                        <select class=" w-25 pl-2 mr-4" id="sel1">
+                            <option>West Cliff</option>
+                            <option>North Cliff</option>
+                            <option>East Cliff</option>
+                            <option>South Cliff</option>
+                        </select>
+                    </div>
+                    <div class="form-group ml-4 mr-4">
+                        <label for="comment-box">How did you hear about us:</label>
+                        <span class="badge badge-danger">Required</span>
+                        <textarea class="form-control w-100" id="comment-box" required></textarea>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="form-group row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 text-center">
+                            <input type="text" id="codeentered" name="randomcode" placeholder="Enter Characters">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 text-center ">
+                            <p class="badge badge-dark p-2" id="codes"></p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="form-group float-right mr-4">
+                        <button class="btn btn-primary" id="submit">Inquire</button>
+                    </div>
+                </fieldset>
+            </form>
+            <section>
+                <ul id="partners" class="container row">
+                    <!-- Use javascript to display images -->
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="row pt-5" id="nondisclaimer">
+                <div class="col-md-12 col-lg-6 mr-auto mt-5 text-center">
+                    <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="social">
+                        <a href="www.facebook.com" class="fa fa-facebook"></a>
+                        <a href="www.instagram.com" class="fa fa-instagram"></a>
+                        <a href="www.twitter.com" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 text-center" id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University.
+                    All contents are not intended for any commercial gain or use.</p>
+                <br><br><br>
+            </div>
+        </footer>
+    </div>
+    <!-- Partners -->
+    <script src="js/site_scripts.js" type="text/Javascript"></script>
+    <!-- Random Code -->
+    <script src="js/randomcodes.js" type="text/Javascript"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>

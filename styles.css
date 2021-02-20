@@ -114,14 +114,25 @@ header {
 
 
 /* Main */
+/*
 #home main,
 #cliffs main,
 #activities main {
+
     font-family: Arial, Helvetica, sans-serif; 
     margin: 5em 0; 
     margin-right: 100px;
     margin-left: 100px; 
-}
+} 
+
+*/
+#cliffs main{
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 5em 0; 
+    margin-right: 100px;
+    margin-left: 100px; 
+} 
+
 main h1 {
     color: #9ed034; 
     padding-bottom: 20px; 
@@ -133,9 +144,8 @@ section {
     background-color: #4288c3;
 }
 section #partners {
-    width: 1200px;
-    padding: 2em 0 2em 0; /*clockwise: top right bottom left*/
-    margin: 0 auto; /*top-bottom left-right*/ 
+    padding: 2em 0 2em 0; 
+    margin: 0 auto; 
     text-align: center;   
 }
 section #partners .partner {
@@ -148,19 +158,17 @@ section #partners .partner {
 section #partners .partner img {
     width: 90px;
     height: 90px;
-}
+} 
 /* Footer */
 footer{
-    width: 100%; 
-    height: 155px; 
-    padding-bottom: 1em; 
     background-color: #ecfab8; 
-}
-footer #nondisclaimer .copy {
+    margin-top:-15px;
+} 
+/* footer #nondisclaimer .copy {
     padding: 3.5em 3.5em 3.5em 13em;
     float: left;
     font-size: 0.9em; 
-}
+} */
 footer #nondisclaimer .social {
     padding: 2.5em;
     margin-right: 9.25em;
@@ -168,7 +176,7 @@ footer #nondisclaimer .social {
 
 }
 footer #disclaimer {
-    clear: both; /*start a new line*/
+    clear: both;
 }
 footer #disclaimer p {
     font-size: 0.85em;
@@ -202,11 +210,18 @@ footer #nondisclaimer .social .fa-twitter {
     color: white;
 }
 /* CLIFFS */
-* {
+{
     box-sizing: border-box;
 }
 .image-container {
     margin-top:4em;
+}
+figcaption {
+    width: 100%; 
+    text-align: center;
+    background-color:darkred;
+    padding: .5em; 
+    color: white;
 }
 .column {
     float: left;
@@ -218,19 +233,12 @@ footer #nondisclaimer .social .fa-twitter {
     width: 100%;
     margin-top: -1.2em;; 
 }
-figcaption {
-    width: 100%; 
-    text-align: center;
-    background-color:darkred;
-    padding: .5em; 
-    color: white;
-}
 .row {
     margin-left: 4em; 
     margin-right:4em;
     margin-top: 15px;
 }
-  /* Clearfix (clear floats) */
+
 .row::after {
     content: "";
     clear: both;
@@ -239,25 +247,22 @@ figcaption {
 
 /* ACTIVITIES*/
 
-caption{
-    caption-side: top;
-}
-
-
-table {
-    width: 1000px;
-    margin: 4em auto 0 auto; 
-    
-} 
 caption {
-    background: #852B1B;
+   
+    /* background: #852B1B;
     height: 40px; 
     color: #fff;
     font-size: 1.3em;
     font-weight: bold;
-    padding-top: 1em; 
-    padding-bottom: 2em;
+    /* padding-top: 1em; 
+    padding-bottom: 2em; */ 
 }
+
+caption{
+    caption-side: top;
+
+}
+
 thead {
     background: #BDE1EF;
 }
@@ -266,15 +271,15 @@ tbody {
     text-align: center; 
 }
 th, td {
-    width: 225px; 
-    height: 75px;
+    /* width: 225px; 
+    height: 75px; */
     vertical-align: middle;
     border: solid 1px #852B1B; 
 }
 
 thead th:first-child {
-    width: 125px;
-    height: 50px;
+    /* width: 125px;
+    height: 50px; */
     background: #4977D1;
     color: #fff;
 }
@@ -292,18 +297,18 @@ tbody tr th{
 
 #activities main #displaySelected{
     visibility: hidden;
-    margin: 0 auto;
+    /* margin: 0 auto;
     width: 600px;
     border: 2px solid #9ed034;
-    padding: 0.75em;
+    padding: 0.75em; */
 }
 
-#activities main #displaySelected #result, 
+/* #activities main #displaySelected #result, 
 #activities main #displaySelected #sendinfo {
     display: inline-block;
     margin: 0;
-}
-#activities main #result{
+} */
+/* #activities main #result{
     min-height: 50px;
     width: 300px;
 
@@ -311,13 +316,17 @@ tbody tr th{
 #activities main #result h4{
     margin-bottom: 1em;
     font-size: 1.15em;
-}
+} */
 #activities main #displaySelected #sendinfo input[type="email"]{
     width: 200px;
 }
 
 /* CONTACT*/
 #contact main p,
+
+
+
+
 #contact main h1,
 #contact .contactinfo,
 #contact form { 
@@ -421,11 +430,40 @@ form textarea {
 } */
 
 /* MEDIA SCREEN */
-@media screen and (max-width: 600px){
-  nav{
-      margin-left: 10%;
-      margin-right: 10%;
-  }
-   
+
+@media screen and (max-width: 768px){
+    
+    /* table{margin-left:-1rem;} */
+
 }
 
+@media screen and (max-width: 600px){
+    header{
+        width: 550px; 
+    }
+    .main-header {
+        width: 350px; 
+    }
+
+
+
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit = no"">
         <title>Activities</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,9 +14,9 @@
 
     </head>
     <body id="activities">
-        <div id="container">
+        <div id="container" >
             <header class="sticky-top">
-                <div class="container main-header">
+                <div class="container main-header sticky-top">
                     <nav class="navbar navbar-expand-lg navbar-light  main-menu ml-n3">
                         <div class="navbar-brand logo mt-n3 ml-n3">
                             <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
@@ -41,91 +41,126 @@
             </header>
 
             <main>
-            
+                <div class="row">
+                    <div class="col-lg-12 text-center"><h1>Activities</h1></div>
+                </div>
 
-            <h1>Activities</h1>
-            <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. 
-                These activities are not however run by the state park and recreational department. They are operated and manage 
-                by private vendors but are partners with the state department. Therefore, for schedule inquiries or information,
-                please contact them directly. For a list of activities, please refer to the table below:
-            </p>
-            <table>
-                <tr>
-                    <caption class="text-center">Activities at the Cliffs</caption>
-                    <thead class="text-center">
-                        <th>Activity</th>
-                        <th>West Cliff</th>
-                        <th>North Cliff</th>
-                        <th>East Cliff</th>
-                        <th>South Cliff</th>
-                    <thead>
-                </tr>
-                <tbody>
-                    <tr>
-                        <th>Hiking</th>
-                        <td>College Hikes</td>
-                        <td>Family Fun</td>
-                        <td>Treasure Trails</td>
-                        <td>Canyon Explorer</td>
-                    <tr>
-                    <tr>
-                        <th>Kayak</th>
-                        <td>Western Kayak Meetup</td>
-                        <td>Not Available</td>
-                        <td>Youth Kayaking</td>
-                        <td>Kayak Down</td>
-                    </tr>
-                    <tr>
-                        <th>Skydiving</th>
-                        <td>Seacliff Diving</td>
-                        <td>Sky is the limit</td>
-                        <td>Not Available</td>
-                        <td>Sky Diving for Beginners</td>
-                    </tr>
-                    <tr>
-                        <th>Biking</th>
-                        <td>Bicycle for One</td>
-                        <td>Not Available</td>
-                        <td>Bike Meetup Group</td>
-                        <td>Not Available</td>
-                    </tr>
-                    <tr>
-                        <th>Camping</th>
-                        <td>Youth Camp</td>
-                        <td>Rent a Tent</td>
-                        <td>Campground Adventure</td>
-                        <td>Sunset Camping</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div id="displaySelected">
-                <div id="result">
-                    <h4>My selected activities to enquire: </h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. 
+                            These activities are not however run by the state park and recreational department. They are operated and manage 
+                            by private vendors but are partners with the state department. Therefore, for schedule inquiries or information,
+                            please contact them directly. For a list of activities, please refer to the table below:
+                        </p>
+                    </div>
                 </div>
-                <div id="sendinfo">
+                <div class="container">
+                    <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <thead class="text-center">
+                                        <th>Activity</th>
+                                        <th>West Cliff</th>
+                                        <th scope="col">North Cliff</th>
+                                        <th scope="col">East Cliff</th>
+                                        <th scope="col">South Cliff</th>
+                                    <thead>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Hiking</th>
+                                        <td >College Hikes</td>
+                                        <td>Family Fun</td>
+                                        <td>Treasure Trails</td>
+                                        <td>Canyon Explorer</td>
+                                    <tr>
+                                    <tr>
+                                        <th scope="row">Kayak</th>
+                                        <td>Western Kayak Meetup</td>
+                                        <td>Not Available</td>
+                                        <td>Youth Kayaking</td>
+                                        <td>Kayak Down</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Skydiving</th>
+                                        <td>Seacliff Diving</td>
+                                        <td>Sky is the limit</td>
+                                        <td>Not Available</td>
+                                        <td>Sky Diving for Beginners</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Biking</th>
+                                        <td>Bicycle for One</td>
+                                        <td>Not Available</td>
+                                        <td>Bike Meetup Group</td>
+                                        <td>Not Available</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Camping</th>
+                                        <td>Youth Camp</td>
+                                        <td>Rent a Tent</td>
+                                        <td>Campground Adventure</td>
+                                        <td>Sunset Camping</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content" id="displaySelected">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">My selected activities to enquire: </h4>
+                            <button type="button" class="close"
+                        data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body" id="result">
+                        
+
+
+                        
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn
+                            btn-success" data-dismiss="modal">Back to Activities </button>
+                            <button type="button" class="btn
+                        btn-primary" data-dismiss="modal">Get Info</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5 mb-5">
                     <input type="email" placeholder="johndoe@gmail.com">
-                    <button>Get Info</button>
+                    <button type="button" class="btn btn-primary">Get Info</button>
                 </div>
-            </div>
         </main>
             <section>
-                <ul id="partners">
-                <!-- Use javascript to display partners -->
+                <ul id="partners" class="container row">
+                    <!-- col-xs-12 col-sm-6 col-md-4 col-lg-2 -->
+                        
                 </ul>
             </section>
 
-
             <footer>
-                <div id="nondisclaimer">
-                    <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com </div>
-                    <div class="social">
-                        <a href="www.facebook.com" class="fa fa-facebook"></a>
-                        <a href="www.instagram.com" class="fa fa-instagram"></a>
-                        <a href="www.twitter.com" class="fa fa-twitter"></a>
+                <div class="row pt-5" id="nondisclaimer">
+                    <div class="col-md-12 col-lg-6 mr-auto mt-5 text-center">
+                        <div class="copy">&copy; Copyright 2021 :: GreatCliffs.com </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="social">
+                            <a href="www.facebook.com" class="fa fa-facebook"></a>
+                            <a href="www.instagram.com" class="fa fa-instagram"></a>
+                            <a href="www.twitter.com" class="fa fa-twitter"></a>
+                        </div>
                     </div>
                 </div>
-
-                <div id="disclaimer">
+                <div class="col-lg-12 text-center" id="disclaimer">
                     <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
                     <br><br><br>
                 </div>
@@ -135,9 +170,10 @@
         <!-- Partners -->
         <script src="js/site_scripts.js" type="text/Javascript"></script>
         <script src="js/activity.js" type="text/Javascript"></script>
+
          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>

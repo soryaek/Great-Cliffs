@@ -10,6 +10,8 @@ $("document").ready(function(){
             if ($(this).hasClass('selected')){
                 $('#displaySelected').css('visibility', 'visible');
                 $('#displaySelected').css('margin-top', '2em');
+                $(this).attr("data-toggle", "modal");
+                $(this).attr("data-target", "#myModal");
                 $('#result').append('<p>' +  content + ' at '+ location +  '</p>');
 
             }else{ 
